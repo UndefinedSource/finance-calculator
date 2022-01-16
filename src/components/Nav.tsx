@@ -9,7 +9,7 @@ export const Nav = () => {
                 {linkButtonData.map((data, i) => {
                     return (
                         <li key={i}>
-                            <a href={`${process.env.REACT_APP_BASE_PATH}#/${data.link}`}>{data.value}</a>
+                            <a href={`${process.env.REACT_APP_BASE_PATH}/#/${data.link}`}>{data.value}</a>
                         </li>
                     );
                 })}
