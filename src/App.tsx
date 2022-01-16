@@ -1,5 +1,5 @@
 import './assets/sass/main.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Nav } from './components/Nav';
 import { Deposit } from './components/depositPages/Deposit';
 import { Loan } from './components/loanPages/Loan';
@@ -10,7 +10,7 @@ import { Home } from './components/Home';
 
 const App = () => {
   return (
-      <BrowserRouter basename={`${process.env.REACT_APP_BASE_PATH}`}>
+      <HashRouter>
           <Nav />
         <div className='content'>
           <Routes >
@@ -22,7 +22,7 @@ const App = () => {
             <Route path='/discount' element={<Discount />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
   );
 };
 
