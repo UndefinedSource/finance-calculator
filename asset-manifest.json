@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/finance-calculator/static/css/main.2e35551e.chunk.css",
-    "main.js": "/finance-calculator/static/js/main.f61be807.chunk.js",
-    "main.js.map": "/finance-calculator/static/js/main.f61be807.chunk.js.map",
+    "main.js": "/finance-calculator/static/js/main.f5e97eff.chunk.js",
+    "main.js.map": "/finance-calculator/static/js/main.f5e97eff.chunk.js.map",
     "runtime-main.js": "/finance-calculator/static/js/runtime-main.fe1976fd.js",
     "runtime-main.js.map": "/finance-calculator/static/js/runtime-main.fe1976fd.js.map",
-    "static/js/2.492a508c.chunk.js": "/finance-calculator/static/js/2.492a508c.chunk.js",
-    "static/js/2.492a508c.chunk.js.map": "/finance-calculator/static/js/2.492a508c.chunk.js.map",
+    "static/js/2.2f40a587.chunk.js": "/finance-calculator/static/js/2.2f40a587.chunk.js",
+    "static/js/2.2f40a587.chunk.js.map": "/finance-calculator/static/js/2.2f40a587.chunk.js.map",
     "static/js/3.6268c834.chunk.js": "/finance-calculator/static/js/3.6268c834.chunk.js",
     "static/js/3.6268c834.chunk.js.map": "/finance-calculator/static/js/3.6268c834.chunk.js.map",
     "index.html": "/finance-calculator/index.html",
     "static/css/main.2e35551e.chunk.css.map": "/finance-calculator/static/css/main.2e35551e.chunk.css.map",
-    "static/js/2.492a508c.chunk.js.LICENSE.txt": "/finance-calculator/static/js/2.492a508c.chunk.js.LICENSE.txt"
+    "static/js/2.2f40a587.chunk.js.LICENSE.txt": "/finance-calculator/static/js/2.2f40a587.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fe1976fd.js",
-    "static/js/2.492a508c.chunk.js",
+    "static/js/2.2f40a587.chunk.js",
     "static/css/main.2e35551e.chunk.css",
-    "static/js/main.f61be807.chunk.js"
+    "static/js/main.f5e97eff.chunk.js"
   ]
 }
