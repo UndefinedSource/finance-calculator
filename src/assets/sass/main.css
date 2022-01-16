@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+body, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f6fb9;
+  line-height: 3rem;
+}
+.nav .logo {
+  color: white;
+  font-size: 1.5rem;
+}
+.nav .menu-icon {
+  position: absolute;
+  right: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav .menu-btn,
+.nav .menu-btn:not(:checked) ~ .menu-list {
+  display: none;
+}
+.nav .menu-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.nav .menu-list li a {
+  display: inline-block;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.nav .menu-list li a:hover {
+  background-color: rgba(156, 191, 255, 0.7);
+}
+@media (min-width: 900px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+  .nav .menu-icon {
+    display: none;
+  }
+  .nav .menu-btn:not(:checked) ~ .menu-list {
+    display: flex;
+  }
+  .nav .menu-list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .nav .menu-list li a {
+    padding: 0.3rem 1rem;
+  }
+}
+
+input[type=radio] + label, button {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border: 0.125rem solid black;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+button {
+  border-color: black;
+  background-color: #46474a;
+  color: white;
+}
+
+.btn-primary, .radio-btn.btn-primary:checked + label {
+  border-color: rgba(0, 73, 207, 0.7);
+  background-color: rgba(0, 73, 207, 0.7);
+  color: white;
+}
+.btn-primary.outline, .radio-btn.btn-primary:checked + label.outline {
+  border-color: rgba(0, 73, 207, 0.7);
+  background-color: white;
+  color: black;
+}
+.btn-primary.outline:hover, .radio-btn.btn-primary:checked + label.outline:hover {
+  border-color: rgba(0, 73, 207, 0.7);
+  background-color: rgba(0, 73, 207, 0.7);
+  color: white;
+}
+
+.btn-success {
+  border-color: rgba(87, 175, 89, 0.9);
+  background-color: rgba(87, 175, 89, 0.9);
+  color: white;
+}
+.btn-success.outline {
+  border-color: rgba(87, 175, 89, 0.9);
+  background-color: white;
+  color: black;
+}
+
+.btn-secondary {
+  border-color: #7a7a7a;
+  background-color: #7a7a7a;
+  color: white;
+}
+.btn-secondary.outline {
+  border-color: #7a7a7a;
+  background-color: white;
+  color: black;
+}
+
+.btn-danger {
+  border-color: #ff6666;
+  background-color: #ff6666;
+  color: white;
+}
+
+.btn-list {
+  margin-bottom: 1.5rem;
+}
+.btn-list button {
+  border-radius: 0;
+}
+.btn-list button:first-child {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+.btn-list button:last-child {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tr {
+  text-align: right;
+}
+
+.bordered.primary th, .bordered.primary td {
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(0, 73, 207, 0.7);
+}
+.bordered.primary th {
+  background: rgba(0, 73, 207, 0.7);
+  color: white;
+}
+
+input {
+  border: 0.1rem solid #bcbdc2;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: right;
+}
+input:focus {
+  border: 0.1rem solid #4f6fb9;
+}
+
+input[type=radio].radio-btn {
+  display: none;
+}
+
+.radio-btn.btn-primary + label, .radio-btn.btn-primary:checked + label.radio-btn + label {
+  border-color: rgba(0, 73, 207, 0.7);
+  background-color: white;
+  color: black;
+}
+.content {
+  margin: 1rem auto;
+  width: min(90%, 700px);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container > * {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.input-group > * {
+  margin-bottom: 1.5rem;
+}
+.input-group.input-with-legend label {
+  position: absolute;
+  left: 0.5rem;
+  top: -0.7rem;
+  padding: 0.2rem;
+  background-color: white;
+}
+.input-group input {
+  width: 100%;
+}
+
+.home-page-btn-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-page-btn-list-container > a {
+  padding: 0.2rem;
+  width: 49%;
+  max-width: 10rem;
+}
+.home-page-btn-list-container > a > button {
+  width: 100%;
+  height: min(8rem, 25vw);
+}
+
+.radio-btn-list-container {
+  display: flex;
+  justify-content: center;
+}
+.radio-btn-list-container > label:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.btn-list-container, .control-btn-list-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-list-container > button:not(:last-child), .control-btn-list-container > button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.control-btn-list-container {
+  width: min(100%, 20rem);
+}
+.control-btn-list-container > button {
+  width: min(100%, 20rem);
+}
+
+.fixed-deposit-container > *:not(:last-child),
+.result-container > *:not(:last-child),
+.discount-container > *:not(:last-child),
+.dividend-container > *:not(:last-child),
+.item-discount-comparsion-container > *:not(:last-child),
+.compounding-asset-container > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+}
+.result-container .result-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.item-discount-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: rgba(233, 240, 255, 0.7);
+}
+
+.final-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+@use '../utils/variables' as *;
+
+table {
+    border-spacing: 0;
+}
+
+tr {
+    text-align: right;
+}
+
+.bordered {
+    &.primary {
+        th, td {
+            padding: 0.5rem;
+            border: 0.1rem solid $primary-color;
+        }
+        
+        th {
+            background: $primary-color;
+            color: white; 
+        }
+    }
+}

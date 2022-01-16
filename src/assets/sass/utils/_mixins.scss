@@ -1,0 +1,9 @@
+@mixin changeBorderColor($color) {
+	border: 0.1rem solid $color;
+}
+
+@mixin changeBtnColor($color, $background-color, $border-color) {
+	border-color: $border-color;
+	background-color: $background-color;
+	color: $color;
+}

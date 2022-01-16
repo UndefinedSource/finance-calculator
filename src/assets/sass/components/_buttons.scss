@@ -1,0 +1,47 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+%button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border: $button-border solid $black;
+    border-radius: $button-border-radius;
+    cursor: pointer;
+}
+
+button {
+    @include changeBtnColor($white, $default-color, $black);
+    @extend %button;
+}
+
+.btn-primary {
+    @include changeBtnColor($white, $primary-color, $primary-color);
+
+    &.outline {
+        @include changeBtnColor($black, $white, $primary-color);
+
+        &:hover {
+            @include changeBtnColor($white, $primary-color, $primary-color);
+        }
+    }
+}
+
+.btn-success {
+    @include changeBtnColor($white, $success-color, $success-color);
+
+    &.outline {
+        @include changeBtnColor($black, $white, $success-color);
+    }
+}
+
+.btn-secondary {
+    @include changeBtnColor($white, $secondary-color, $secondary-color);
+
+    &.outline {
+        @include changeBtnColor($black, $white, $secondary-color);
+    }
+}
+
+.btn-danger {
+    @include changeBtnColor($white, $danger-color, $danger-color);
+}

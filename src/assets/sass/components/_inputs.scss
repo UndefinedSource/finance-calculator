@@ -1,0 +1,32 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+@use './buttons' as *;
+
+
+input {
+    @include changeBorderColor($input-border-color);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-align: right;
+    
+    &:focus {
+        @include changeBorderColor($navbar-background-color);
+    }
+}
+
+input[type="radio"] + label {
+    @extend %button;
+}
+
+input[type="radio"].radio-btn {
+    display: none;
+}
+
+.radio-btn.btn-primary {
+    & + label {
+        @include changeBtnColor($black, $white, $primary-color);
+    }
+    &:checked + label {
+        @extend .btn-primary;
+    }
+}

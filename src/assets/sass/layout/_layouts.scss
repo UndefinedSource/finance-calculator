@@ -1,0 +1,108 @@
+@use '../utils/variables' as var;
+
+.content {
+    margin: 1rem auto;
+    width: min(90%, 700px);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > * {
+        margin-bottom: var.$input-group-bottom-margin;
+    }
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    > * {
+        margin-bottom: var.$input-group-bottom-margin;
+    }
+
+    &.input-with-legend {
+        label {
+            position: absolute;
+            left: 0.5rem;
+            top: -0.7rem;
+            padding: 0.2rem;
+            background-color: var.$white;
+        }
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+.home-page-btn-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > a {
+        padding: 0.2rem;
+        width: 49%;
+        max-width: 10rem;
+
+        > button {
+            width: 100%;
+            height: min(8rem, 25vw);
+        }
+    }
+}
+
+.radio-btn-list-container {
+    display: flex;
+    justify-content: center;
+
+    > label:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+}
+
+.btn-list-container {
+    display: flex;
+    justify-content: center;
+
+    > button:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+}
+
+.control-btn-list-container {
+    @extend .btn-list-container;
+    width: min(100%, 20rem);
+    
+    > button {
+        width: min(100%, 20rem);
+    }
+}
+
+.fixed-deposit-container,
+.result-container,
+.discount-container,
+.dividend-container,
+.item-discount-comparsion-container,
+.compounding-asset-container {
+    > *:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+
+    .result-group {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem;
+    }
+}

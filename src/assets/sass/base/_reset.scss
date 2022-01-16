@@ -1,0 +1,23 @@
+@use "../utils/variables" as var;
+
+* {
+    box-sizing: border-box;
+}
+
+body, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var.$white;
+    text-decoration: none;
+}

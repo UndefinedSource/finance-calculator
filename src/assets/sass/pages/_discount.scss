@@ -1,0 +1,15 @@
+@use '../utils/variables' as var;
+
+.item-discount-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: lighten(var.$primary-color, 55%);
+}
+
+.final-price-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}

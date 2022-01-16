@@ -1,0 +1,74 @@
+@use '../utils/variables' as var;
+
+$logo-font-size: 1.5rem;
+$menu-hover-color: lighten(var.$primary-color, 40%);
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var.$navbar-background-color;
+    line-height: 3rem;
+
+    .logo {
+        color: var.$white;
+        font-size: $logo-font-size; 
+    }
+
+    .menu-icon {
+        position: absolute;
+        right: 1rem;
+        color: var.$white;
+        font-size: $logo-font-size;
+        cursor: pointer;
+    }
+
+    .menu-btn,
+    .menu-btn:not(:checked) ~ .menu-list {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        li a {
+            display: inline-block;
+            width: 100%;
+            border-radius: 0.3rem;
+
+            &:hover {
+                background-color: $menu-hover-color;
+            }
+        }
+    }
+
+    @media (min-width: var.$tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 1rem;
+
+        .menu-icon {
+            display: none;
+        }
+
+        .menu-btn:not(:checked) ~ .menu-list {
+            display: flex;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+
+            li {
+                a {
+                    padding: 0.3rem 1rem;
+                }
+            }
+        }
+    }
+}
