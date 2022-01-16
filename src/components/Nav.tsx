@@ -3,13 +3,13 @@ import { linkButtonData } from './shared';
 export const Nav = () => {
     return (
         <nav className='nav'>
-            <span className='logo'><a href='/'>금융계산기</a></span>
+            <span className='logo'><a href={`${process.env.REACT_APP_BASE_PATH}`}>금융계산기</a></span>
             <ToggleButton/>
             <ul className='menu-list'>
                 {linkButtonData.map((data, i) => {
                     return (
                         <li key={i}>
-                            <a href={`${data.link}`}>{data.value}</a>
+                            <a href={`${process.env.REACT_APP_BASE_PATH}/${data.link}`}>{data.value}</a>
                         </li>
                     );
                 })}

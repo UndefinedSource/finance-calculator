@@ -10,7 +10,7 @@ import { Home } from './components/Home';
 
 const App = () => {
   return (
-      <BrowserRouter basename='/finance-calculator'>
+      <BrowserRouter basename={`${process.env.REACT_APP_BASE_PATH}`}>
           <Nav />
         <div className='content'>
           <Routes >
