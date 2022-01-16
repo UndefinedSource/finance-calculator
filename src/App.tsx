@@ -10,10 +10,10 @@ import { Home } from './components/Home';
 
 const App = () => {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename='/finance-calculator'>
           <Nav />
         <div className='content'>
-          <Routes>
+          <Routes >
             <Route path='/' element={<Home />} />
             <Route path='/deposit' element={<Deposit />} />
             <Route path='/loan' element={<Loan />} />
